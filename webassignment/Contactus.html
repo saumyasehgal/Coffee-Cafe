@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Coffee Cafe</title>
+  <link rel="stylesheet" href="Contactus.css"> <!-- Link your CSS file for the Contact page -->
+</head>
+<body>
+    <div class="contact-heading">
+        <h1>Contact Us</h1>
+        <p class="bold-text">We love to hear what you think. Mail us at <a href="mailto:eshop@CoffeeCafe.com" class="email-link">eshop@CoffeeCafe.com</a> and we'll get back to you as soon as we can!</p>
+      </div>
+    
+  <div class="contact-methods">
+    <div class="method" style="background-color: #FFC107;">
+      <span class="bold-text">Contact Us:</span><br><br>
+      <span class="italic-text">one email, phone call, or block away</span>
+    </div>
+    <div class="method" style="background-color: #4CAF50;">
+      <span class="bold-text">Email:</span>
+      <span class="email">&#x2615 Coffeecafe@email.com</span>
+    </div>
+    <div class="method" style="background-color: #2196F3;">
+      <span class="bold-text">Phone:</span>
+      <span class="phone">&#x260E +91 123 456 7890</span>
+    </div>
+    <div class="method" style="background-color: #FF5722;">
+      <span class="bold-text">Address:</span>
+      <span class="address"> &#x1F3E2 123 Coffee Street,Mumbai, India</span>
+    </div>
+  </div>
+  
+  <div class="contact-form">
+    <h2>Drop Us a Line</h2>
+    <form action="submit_form.php" method="POST">
+      <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+      <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+      <input type="email" id="email" name="email" placeholder="Email Address" required>
+      <input type="tel" id="pno" name="phone" placeholder="Phone Number" required>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</body>
+</html>

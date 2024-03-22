@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #000; /* Black font color */
+  background-color: #fff; /* White background */
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.image-wrapper {
+  display: flex;
+}
+
+.image-wrapper img {
+  width: 300px; /* Adjust image width as needed */
+  height: auto;
+  margin-right: 20px; /* Add space between images */
+}
+.hero-section {
+  text-align: center;
+}
+.welcome-text {
+  font-size: 36px; /* Adjust the font size as needed */
+}
+
+.subtitle {
+  font-size: 24px; /* Adjust the font size as needed */
+}
+.about-heading {
+  font-size: 30px; /* Adjust the font size as needed */
+  font-style: italic; /* Add italic style */
+}
+
+.about-description {
+  font-size: 18px; /* Adjust the font size as needed */
+  text-align: center; /* Center align the text */
+  margin: 20px 0; /* Add margin top and bottom */
+}
+.about-heading{
+  font-size:20px ;
+  text-align: center;
+}
+.opening-hours {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.opening-hours h3 {
+  font-size: 24px;
+}

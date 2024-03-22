@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignIn - Coffee Cafe</title>
+  <link rel="stylesheet" href="SignIn.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create an Account</h1>
+    <p>Join the Coffee Cafe Rewards to earn stars for free food and drinks, any way you pay. Get access to mobile ordering, a birthday reward, and more.</p>
+    <p class="required">* Indicates required field</p>
+    <h2>Personal Information</h2>
+    <p class="required">* First Name</p>
+    <input type="text" id="firstName" name="firstName" required>
+    <p class="required">* Last Name</p>
+    <input type="text" id="lastName" name="lastName" required>
+    <h2>Account Security</h2>
+    <p class="required">* Email Address</p>
+    <input type="email" id="email" name="email" required>
+    <p class="required">* Password</p>
+    <div class="password-container">
+      <input type="password" id="password" name="password" required>
+      <span class="eye-icon" onclick="togglePasswordVisibility()">&#128065;</span>
+    </div>
+    <p id="passwordRequirements" class="password-requirements">Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number, and 1 special character like an exclamation point or asterisk.</p>
+    <label for="emailSubscription">
+      <input type="checkbox" id="emailSubscription" name="emailSubscription">
+      Yes, I'd like email from Coffee Cafe
+    </label>
+    <p class="subscription-info">Know about initiatives, announcements, and product offers.</p>
+    <button type="submit" class="create-account-btn">Create Account</button>
+  </div>
+
+  <script>
+    function togglePasswordVisibility() {
+      var passwordInput = document.getElementById("password");
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+      } else {
+        passwordInput.type = "password";
+      }
+    }
+  </script>
+</body>
+</html>
